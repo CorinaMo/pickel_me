@@ -126,7 +126,7 @@ export default function App() {
   }
 
   // Compartimos
-  const text = encodeURIComponent("Sweet and hot... Pickel me!");
+  const text = encodeURIComponent("Sweet and hot... Pickle me!");
   const url = "https://CorinaMo.github.io/pickel_me";
   const params = "menubar=no,toolbar=no,status=no,width=600,height=600";
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -134,8 +134,7 @@ export default function App() {
 
   // Compartir en Facebook
   function faceshare() {
-    const pic = 'https://repository-images.githubusercontent.com/303968736/b0012f80-0e12-11eb-99c1-4f13fb16399e'
-    let shareface = `http://www.facebook.com/sharer/sharer.php?u=${url}&picture=${pic}`;
+    let shareface = `http://www.facebook.com/sharer/sharer.php?u=${url}`;
      window.open(shareface,"NewWindow" , params); 
      setOpen(false)
   }
