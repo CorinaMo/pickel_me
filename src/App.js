@@ -124,7 +124,7 @@ export default function App() {
         window.open().document.write('<img src="' + canvas.toDataURL() + '" />');
       });
   }
-     
+
   // Compartimos
   const text = encodeURIComponent("Sweet and hot... Pickel me!");
   const url = "https://CorinaMo.github.io/pickel_me";
@@ -134,7 +134,8 @@ export default function App() {
 
   // Compartir en Facebook
   function faceshare() {
-    let shareface = `http://www.facebook.com/sharer/sharer.php?u=${url}`;
+    const pic = 'https://repository-images.githubusercontent.com/303968736/b0012f80-0e12-11eb-99c1-4f13fb16399e'
+    let shareface = `http://www.facebook.com/sharer/sharer.php?u=${url}&picture=${pic}`;
      window.open(shareface,"NewWindow" , params); 
      setOpen(false)
   }
