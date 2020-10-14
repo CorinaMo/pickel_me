@@ -127,7 +127,7 @@ export default function App() {
 
   // Compartimos
   const text = encodeURIComponent("Sweet and hot... Pickel me!");
-  const url = "http://CorinaMo.github.io/Pickelme";
+  const url = "https://CorinaMo.github.io/pickel_me";
   const params = "menubar=no,toolbar=no,status=no,width=600,height=600";
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [open, setOpen] = React.useState(false);
