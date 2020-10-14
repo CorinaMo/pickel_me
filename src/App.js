@@ -124,7 +124,7 @@ export default function App() {
         window.open().document.write('<img src="' + canvas.toDataURL() + '" />');
       });
   }
-
+     
   // Compartimos
   const text = encodeURIComponent("Sweet and hot... Pickel me!");
   const url = "https://CorinaMo.github.io/pickel_me";
