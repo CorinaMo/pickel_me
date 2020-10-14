@@ -135,8 +135,7 @@ export default function App() {
   // Compartir en Facebook
   function faceshare() {
     //&picture=${avatarcircle}
-    const pic = 'http://s759284341.mialojamiento.es/wp-content/uploads/2020/10/pickelme-25.jpg'
-    let shareface = `http://www.facebook.com/sharer/sharer.php?u=${url}&picture=${pic}`;
+    let shareface = `http://www.facebook.com/sharer/sharer.php?u=${url}`;
      window.open(shareface,"NewWindow" , params); 
      setOpen(false)
   }
