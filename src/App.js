@@ -155,7 +155,7 @@ export default function App() {
               <Avatar src={avatarcircle} alt="avatar-circle" className={classes.avatarcircle}>
               </Avatar>
             }
-            title="PICKEL ME!"
+            title="PICKLE ME!"
 
           />
           <ButtonGroup style={{ marginLeft: '20px'}}>
