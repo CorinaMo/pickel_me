@@ -134,7 +134,6 @@ export default function App() {
 
   // Compartir en Facebook
   function faceshare() {
-    //&picture=${avatarcircle}
     let shareface = `http://www.facebook.com/sharer/sharer.php?u=${url}`;
      window.open(shareface,"NewWindow" , params); 
      setOpen(false)
