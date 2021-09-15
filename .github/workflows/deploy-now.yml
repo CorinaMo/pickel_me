@@ -11,7 +11,7 @@ jobs:
         id: project
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
-          project: 2d717d8e-dc6d-4d2a-8cca-c9397cbbbb87
+          project: 7b7bacc2-8aaf-4352-8a7d-d65994b49aa8
           service-host: api-eu.ionos.space
       - name: checkout
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
@@ -30,15 +30,15 @@ jobs:
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         run: npm run build
         env:
-          SITE_URL: ${{ steps.project.outputs.site-url }}
           CI: true
+          SITE_URL: ${{ steps.project.outputs.site-url }}
       - name: Deploy build
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: ionos-deploy-now/deploy-to-ionos-action@v1
         with:
           remote-host: ${{ steps.project.outputs.remote-host }}
           dist-folder: build
-          project: 2d717d8e-dc6d-4d2a-8cca-c9397cbbbb87
+          project: 7b7bacc2-8aaf-4352-8a7d-d65994b49aa8
           storage-quota: ${{ steps.project.outputs.storage-quota }}
           branch-id: ${{ steps.project.outputs.branch-id }}
           service-host: api-eu.ionos.space
